@@ -28,6 +28,11 @@ void Application::Initial() {
 }
 
 //---------------------------------------------------------------------------
+// 文字列をリストに登録する
+// コンソールから入力された文字列をリストに登録する。
+// [end]と入力すると終了。
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 void Application::Run()
 {
 	string 		cin_str;
@@ -46,6 +51,9 @@ void Application::Run()
 }
 
 //---------------------------------------------------------------------------
+// リストに登録された文字列を表示する
+// イテレーターを２つ作って、リセットされる様子を観察する
+//---------------------------------------------------------------------------
 void Application::Exit() {
 	StringListIterator* iterator01 = PStrList->GetIterator();
 	StringListIterator* iterator02 = PStrList->GetIterator();
@@ -56,16 +64,19 @@ void Application::Exit() {
 		cout << endl << "ToDo is nothing.";
 	}
 	else {
-		cout << endl << "Display ToDo." << endl;
+		cout << endl << "Display ToDo 1st." << endl;
 		while( iterator01->HasNext() == true ) {
 			cout << iterator01->Next() << endl;
 			cout << iterator02->Next() << endl;
 		}
 	}
 
-	delete PStrList;
-	iterator01->HasNext();
-	iterator02->HasNext();
+	iterator01->ResetAll();
+	cout << endl << "Display ToDo 2nd." << endl;
+	while( iterator01->HasNext() == true ) {
+		cout << iterator01->Next() << endl;
+		cout << iterator02->Next() << endl;
+	}
 
 	delete iterator01;
 	delete iterator02;

@@ -18,8 +18,7 @@ StringListIterator::StringListIterator( StringList *list ) {
 
 //---------------------------------------------------------------------------
 StringListIterator::~StringListIterator() {
-	// TODO Auto-generated destructor stub
-} /* namespace std */
+}
 
 //---------------------------------------------------------------------------
 bool StringListIterator::HasNext() {

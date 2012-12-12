@@ -12,7 +12,6 @@ using namespace std;
 
 //---------------------------------------------------------------------------
 StringList::StringList() {
-	// TODO 自動生成されたコンストラクター・スタブ
 
 }
 
@@ -23,7 +22,6 @@ StringList::StringList( StringList *StringList )
 
 //---------------------------------------------------------------------------
 StringList::~StringList() {
-	// TODO Auto-generated destructor stub
 }
 
 //---------------------------------------------------------------------------

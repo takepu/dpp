@@ -19,8 +19,11 @@ StringListIterator::StringListIterator( StringList *list ) {
 
 //---------------------------------------------------------------------------
 StringListIterator::~StringListIterator() {
-	// TODO Auto-generated destructor stub
-} /* namespace std */
+	if(	PStringList != NULL )
+	{
+		PStringList->ReleaseIterator( this );
+	}
+}
 
 //---------------------------------------------------------------------------
 bool StringListIterator::HasNext() {
@@ -47,8 +50,14 @@ string&	StringListIterator::Next() {
 }
 
 //---------------------------------------------------------------------------
-void StringListIterator::DeleteList( ){
-	PStringList = NULL;
+void StringListIterator::Reset() {
 	Current     = 0;
-	cout << "StringListIterator::DeleteList() Call" << endl;
+}
+
+//---------------------------------------------------------------------------
+void StringListIterator::ResetAll() {
+	if( PStringList == NULL ) {
+		return;
+	}
+	PStringList->ResetAll();
 }

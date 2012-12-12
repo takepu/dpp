@@ -7,12 +7,13 @@
 
 #include "StringListIterator.h"
 #include "StringList.h"
+#include <iostream>
+#include <string>
 
 using namespace std;
 
 //---------------------------------------------------------------------------
 StringList::StringList() {
-	// TODO 自動生成されたコンストラクター・スタブ
 
 }
 
@@ -23,9 +24,6 @@ StringList::StringList( StringList *StringList )
 
 //---------------------------------------------------------------------------
 StringList::~StringList() {
-	for( unsigned long cnt=0; cnt<IteratorList.size(); cnt++) {
-		IteratorList[cnt].DeleteList();
-	}
 }
 
 //---------------------------------------------------------------------------
@@ -56,7 +54,33 @@ StringListIterator* StringList::GetIterator()
 	class StringListIterator* iterator;
 
 	iterator = new StringListIterator( this );
-	IteratorList.push_back( *iterator );
+	IteratorList.push_back( iterator );
 
 	return iterator;
+}
+
+//---------------------------------------------------------------------------
+void StringList::ReleaseIterator( class StringListIterator* obj )
+{
+	vector <class StringListIterator*>::iterator iter;
+	for( iter=IteratorList.begin(); iter!=IteratorList.end(); iter++ )
+	{
+		if( (*iter) == obj )
+		{
+			iter = IteratorList.erase( iter );
+			cout << "Iterator Release!" << endl;
+			break;
+		}
+	}
+}
+
+//---------------------------------------------------------------------------
+void StringList::ResetAll()
+{
+	unsigned int idx;
+
+	for( idx=0; idx<IteratorList.size(); idx++)
+	{
+		IteratorList[idx]->Reset();
+	}
 }
