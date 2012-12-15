@@ -1,0 +1,10 @@
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\bin\Debug\ToDo_for_VB.exe
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\bin\Debug\ToDo_for_VB.pdb
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\bin\Debug\ToDo_for_VB.xml
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\obj\x86\Debug\ToDo_for_VB.Resources.resources
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\obj\x86\Debug\ToDo_for_VB.exe
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\obj\x86\Debug\ToDo_for_VB.xml
+C:\Documents and Settings\takepu\my documents\visual studio 2010\Projects\ToDo_for_VB\ToDo_for_VB\obj\x86\Debug\ToDo_for_VB.pdb
