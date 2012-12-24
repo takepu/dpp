@@ -11,7 +11,7 @@
 using namespace std;
 
 //---------------------------------------------------------------------------
-StringListIterator::StringListIterator( StringList *list ) {
+StringListIterator::StringListIterator( std::StringList *list ) {
 	PStringList = list;
 	Current     = 0;
 }

@@ -44,6 +44,7 @@ void Application::Run()
 			break;
 		}
 		PStrList->Add( cin_str );
+		cout << "Hello";
 	}
 	cout << "Program is over.";
 }
